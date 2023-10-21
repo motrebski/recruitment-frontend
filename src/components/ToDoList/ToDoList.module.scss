@@ -1,0 +1,90 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  max-height: 600px;
+  width: 400px;
+  position: relative;
+  overflow: auto;
+}
+
+.addTaskFormContainer {
+  height: 50px;
+}
+
+.addTaskForm {
+  display:flex;
+  flex-direction:row;
+  border: 1px solid #67B7D1;
+  border-radius: 3px;
+  height: 27px;
+}
+
+.addTaskButton {
+  background-color: #67B7D1;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  border: 1px solid #67B7D1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.addTaskButton:hover {
+  background-color: #43A6C6;
+  border: 1px solid #43A6C6;
+}
+
+.addTaskInput {
+  font-size: medium;
+  border-radius: 3px;
+  border: none;
+  padding-left: 5px;
+  flex-grow: 2;
+}
+
+.addTaskError {
+  font-size: small;
+  color: red;
+  position: absolute;
+  top: 30px;
+  left: 5px
+}
+
+.toDoListItem {
+  display: flex;
+  align-items: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: medium;
+  padding-left: 5px;
+  border-bottom: 1px solid #67B7D1;
+}
+
+.toDoListItem svg {
+  fill: #67B7D1;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.toDoListItem svg:hover {
+  fill: #43A6C6;
+}
+
+.toDoListItemDisabled {
+  opacity: 0.5;
+}
+
+.toDoListText {
+  text-align: left;
+  flex-grow: 2;
+}
+
+.taskActionContainer {
+  display: flex;
+}
